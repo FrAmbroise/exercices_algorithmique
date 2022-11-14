@@ -19,17 +19,17 @@ function getRndInRange(min, max) {
 }
 
 
-while(names.length > 4){
+while(names.length > 0){
     randomname = Math.floor(Math.random()*(names.length));
     randomcarac = Math.floor(Math.random()*(names.length));
-    randomdeath = getRndInRange(0.00, 0.0);
-    randomattack = getRndInRange(0.0, 0.0);
+    randomdeath = getRndInRange(0.05, 0.6);
+    randomattack = getRndInRange(0.1, 0.6);
     survivors.push(new Character(names[randomname], caracteristics[randomcarac], randomdeath, randomattack));
     names.splice(randomname, 1);
     caracteristics.splice(randomcarac,1);
 }
 
-let Killerhp = 10;
+let Killerhp = 100;
 let dead = "";
 
 while(survivors.length > 0){
