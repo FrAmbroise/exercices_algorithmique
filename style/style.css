@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+.rules{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.baton{
+    margin: 10px;
+    height: 250px;
+    width: 40px;
+    background-color: red;
+}
+.baaton{
+    margin: 10px;
+    height: 20px;
+    width: 70px;
+    background-color: red;
+}
+.active{
+    background-color: blue;
+}
+
+.used{
+    background-color: grey;
+}
+#win1{
+    background-color: white;
+    color: black;
+    font-size: 10rem;
+    position : fixed;
+    top:0;
+    left: 0;
+}
+
+#turn1{
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    position : fixed;
+    top:0;
+    left: 0;
+}
+
+#turn2{
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    position : fixed;
+    top:0;
+    left: 0;
+}
+
+#win2{
+    background-color: white;
+    color: black;
+    font-size: 10rem;
+    position : fixed;
+    top :0;
+    left: 0;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.valid-button{
+    margin-left: 40px;
+    height: 80px;
+    width: 160px;
+    font-size: 2rem;
+    background-color: grey;
+    color: white;
+    border-radius: 15px;
+    border: 0;
+}
+
+.validate{
+    background-color: green;
+}
